@@ -1,4 +1,3 @@
-// src/components/Nav.jsx
 import React from "react";
 import Logo from "../assets/images/logo.svg";
 import Search from "../assets/images/search.svg";
