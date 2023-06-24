@@ -231,7 +231,7 @@ nav .link-styled {
 .jumbotron-section .links {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    margin-block: 24px;
     align-items: center;
     margin-left: 0;
     margin-right: 0;
