@@ -1,7 +1,9 @@
+// src/components/Nav.jsx
 import React from "react";
 import Logo from "../assets/images/logo.svg";
 import Search from "../assets/images/search.svg";
 import Store from "../assets/images/store.svg";
+import NavImage from "./NavImage";
 
 const Nav = () => {
     return (
@@ -9,7 +11,7 @@ const Nav = () => {
             <div className="nav-content">
                 <ul className="list-styled">
                     <li>
-                        <img src={Logo} alt="Apple" />
+                        <NavImage src={Logo} alt="Apple" />
                     </li>
                     <li>
                         <a className="link-styled">Store</a>
@@ -39,15 +41,19 @@ const Nav = () => {
                         <a className="link-styled">Support</a>
                     </li>
                     <li>
-                        <img src={Search} alt="search" />
+                        <NavImage src={Search} alt="search" />
                     </li>
                     <li>
-                        <img src={Store} alt="store" />
+                        <NavImage src={Store} alt="store" />
                     </li>
                 </ul>
             </div>
         </nav>
     );
 };
+
+const NavImage = React.memo(({ src, alt }) => {
+    return <img src={src} alt={alt} />;
+});
 
 export default Nav;
