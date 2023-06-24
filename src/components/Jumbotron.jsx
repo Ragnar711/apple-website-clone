@@ -1,20 +1,13 @@
 import React from "react";
 import Iphone from "../assets/images/iphone-14.jpg";
 import HoldingIphone from "../assets/images/iphone-hand.png";
+import { handleLearnMore } from "../utils";
 
 const Jumbotron = () => {
-    const handleLearnMore = () => {
-        const element = document.querySelector(".sound-section");
-        window.scrollTo({
-            top: element?.getBoundingClientRect().top,
-            left: 0,
-            behavior: "smooth",
-        });
-    };
     return (
         <div className="jumbotron-section wrapper">
             <h2 className="title">New</h2>
-            <img className="logo" src={Iphone} alt="Iphone" />
+            <JumbotronImage src={Iphone} alt="Iphone" />
             <p className="text">Big and bigger</p>
             <span className="description">
                 From $41.62/mo. for 24 mo. or $999 before trade-in
@@ -29,9 +22,17 @@ const Jumbotron = () => {
                     </a>
                 </li>
             </ul>
-            <img className="iphone-img" src={HoldingIphone} alt="Iphone" />
+            <JumbotronImage
+                src={HoldingIphone}
+                alt="Iphone"
+                className="iphone-img"
+            />
         </div>
     );
+};
+
+const JumbotronImage = ({ src, alt, className }) => {
+    return <img className={className} src={src} alt={alt} />;
 };
 
 export default Jumbotron;
