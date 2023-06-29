@@ -15,7 +15,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/three": "^0.139.0",
+    "@types/three": "^0.152.1",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "gsap": "^3.11.4",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -29,7 +29,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "vite": "^4.1.0",
-    "@types/three": "^0.139.0",
+    "@types/three": "^0.152.1",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "cross-env": "^7.0.3",
     "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.5.tgz"
